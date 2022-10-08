@@ -1,0 +1,26 @@
+{
+  "name": "introvert-empowerment",
+  "version": "1.0.0",
+  "description": "hello world",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnBenton4/Introvert-Empowerment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnBenton4/Introvert-Empowerment/issues"
+  },
+  "homepage": "https://github.com/JohnBenton4/Introvert-Empowerment#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.20"
+  }
+}
