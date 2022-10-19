@@ -3,7 +3,7 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.bulkInsert(
-      'conversations',
+      'Conversations',
       [
         {
           conversationstarter: 'Try sharing a related story with a co-worker when in you find yourself in a conversation.',
@@ -196,6 +196,6 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.bulkDelete('conversations', null, {});
+    await queryInterface.bulkDelete('Conversations', null, {});
   }
 }; 
