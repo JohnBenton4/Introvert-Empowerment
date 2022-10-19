@@ -3,7 +3,7 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.bulkInsert(
-      'pickuplines', 
+      'PickupLines', 
       [
         {
           line: 'Ask someone if they speak a language other than English. Ask them how they say, “I love you” in that language. Then tell them you are taken, but you will take their number.',
@@ -84,6 +84,6 @@ module.exports = {
       },
 
       down: async (queryInterface, Sequelize) => {
-        await queryInterface.bulkDelete('pickuplines', null, {});
+        await queryInterface.bulkDelete('PickupLines', null, {});
       }
 };
