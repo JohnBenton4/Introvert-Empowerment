@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom"
 import React from "react"
+import { CiUser } from "react-icons/ci";
+import { Link } from "react-router-dom"
 
 export default function Navbar() {
     return (
@@ -8,7 +9,7 @@ export default function Navbar() {
                 <h1>Introvert Empowerment</h1>
             </Link>
             <ul className="navbar-routes">
-            <li>
+                <li>
                     <Link to="/">Home</Link>
                 </li>
                 <li>
@@ -18,7 +19,10 @@ export default function Navbar() {
                     <Link to="/contact">Contact</Link>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <Link to="/about"></Link>
+                </li>
+                <li>
+                    <Link to="/login"><CiUser size={20} style={{ color: "#000000", marginRight: "2rem" }} /></Link>
                 </li>
             </ul>
         </div>
