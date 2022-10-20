@@ -3,10 +3,10 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class UserPickupLine extends Model {
-   
+  class UserConversation extends Model {
+    
   }
-  UserPickupLine.init(
+  UserConversation.init(
     {
     userId: {
       type: DataTypes.INTEGER,
@@ -15,18 +15,17 @@ module.exports = (sequelize, DataTypes) => {
         key: 'id',
       }
     },
-    pickuplineID: {
+    conversationId: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'PickupLines',
+        model: 'Conversations',
         key: 'id',
       }
+    },
   },
-}, 
   {
     sequelize,
-    modelName: 'UserPickupLine',
-  }
-  );
-  return UserPickupLine;
+    modelName: 'UserConversation',
+  });
+  return UserConversation;
 };
