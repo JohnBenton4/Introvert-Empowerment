@@ -20,6 +20,10 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
+          <Route path='/challenges' element={<Login />} />
+          <Route path='/taskmanagement' element={<Login />} />
+          <Route path='/textreminder' element={<Login />} />
+
         </Routes>
         </>
     </div>
