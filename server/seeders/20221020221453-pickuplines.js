@@ -1,6 +1,5 @@
 'use strict';
 
-/** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.bulkInsert(
@@ -8,7 +7,7 @@ module.exports = {
       [
         {
           userId: 1,
-          challengeId: 1,
+          pickuplineId: 2,
         },
       ],
     );
