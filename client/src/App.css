@@ -1,30 +1,160 @@
+/* Navbar section */
 .nav-logo {
   display: flex;
   justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    /* position: fixed; */
-    width: 100%;
-    height: 90px;
-    background: rgb(143, 141, 141);
+  align-items: center;
+  padding: 10px;
+  /* position: fixed; */
+  width: 100%;
+  height: 90px;
+  background: rgb(13, 255, 0);
 }
+
 .navbar-routes {
-    display: flex;
+  display: flex;
 }
+
 .navbar-routes li {
-    padding: 0.5rem;
-    list-style-type: none;
+  padding: 0.5rem;
+  list-style-type: none;
 }
+
 .navbar-routes a {
-    font-size: 1.2rem;
-    font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
+
 h1,
 h1,
 p,
 a {
   text-decoration: none;
 }
+
+/* ------------------------------------------------------------------ */
+/* Landing page section */
+
+.home-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.container {
+  height: 80vh;
+  width: 100%;
+}
+
+.container #MessageDayContainer {
+  position: absolute;
+  top: 5%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  text-align: center;
+  background-color: aqua;
+  width: 50%;
+}
+
+.sub-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* About us section */
+.about-container {
+  background-color: blueviolet;
+  height: 20vh;
+  width: 100%;
+  text-align: center;
+}
+.about-container h1 {
+  top: 0;
+  margin: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* services section */
+
+.project-container {
+  /* position: relative; */
+  height: 60vh;
+  background-color: violet;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* flex-wrap: wrap;  */
+}
+.flip-card {
+  background-color: transparent;
+  width: 320px;
+  height: 400px;
+  margin: 20px 30px;
+  perspective: 1000px;
+}
+.cardimg {
+  width: 320px;
+  height: 200px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer section */
 .footer {
   width: 100%;
   padding: 6rem 0;
