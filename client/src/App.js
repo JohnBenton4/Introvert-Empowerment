@@ -8,7 +8,9 @@ import Login from './routes/Login';
 import Register from './routes/Register';
 import Home from "./routes/Home"
 import "./App.css"
-
+import Challenges from './routes/Challenges';
+import TaskManagement from './routes/TaskManagement';
+import TextReminder from './routes/TextReminder';
 function App() {
   return (
     <div className="App">
@@ -20,9 +22,9 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
-          <Route path='/challenges' element={<Login />} />
-          <Route path='/taskmanagement' element={<Login />} />
-          <Route path='/textreminder' element={<Login />} />
+          <Route path='/challenges' element={<Challenges />} />
+          <Route path='/taskmanagement' element={<TaskManagement />} />
+          <Route path='/textreminder' element={<TextReminder />} />
 
         </Routes>
         </>
