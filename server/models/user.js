@@ -11,7 +11,7 @@ User.belongsToMany(models.Challenge, {
   through: models.UserChallenge,
   forignKey: 'userID',
   otherKey: 'challengeID',
-});  }
+});   }
 
 
   }
