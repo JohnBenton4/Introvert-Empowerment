@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
         key: 'id',
       }
     },
-    pickuplineID: {
+    pickupLineId: {
       type: DataTypes.INTEGER,
       references: {
         model: 'PickupLines',

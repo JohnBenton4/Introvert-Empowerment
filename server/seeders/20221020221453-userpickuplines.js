@@ -7,7 +7,7 @@ module.exports = {
       [
         {
           userId: 1,
-          pickuplineId: 2,
+          pickupLineId: 2,
         },
       ],
     );

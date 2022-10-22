@@ -11,7 +11,7 @@ module.exports = {
             key: 'id',
           },
         },
-        pickuplineId: {
+        pickupLineId: {
           type: Sequelize.INTEGER,
           references: {
             model: 'PickupLines',

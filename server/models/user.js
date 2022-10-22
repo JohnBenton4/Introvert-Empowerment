@@ -24,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
         as: 'pickuplines',
         through: models.UserPickupLine,
         forignKey: 'userId',
-        otherKey: 'pickuplineId',
+        otherKey: 'pickupLineId',
       });
     }
   }
