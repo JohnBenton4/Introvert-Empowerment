@@ -1,5 +1,5 @@
 const http = require("http");
-
+var cors = require('cors')
 const hostname = "127.0.0.1";
 const port = 8000;
 
@@ -17,6 +17,8 @@ const jwt = require('jsonwebtoken');
 // app.get('/', (req, res) => {
 //     res.send('Hello from Express!');
 // });
+
+app.use(cors())
 
 app.get('/challenges', async (req, res) => {
     const challenges = await Challenge.findAll();
