@@ -2,14 +2,26 @@ import { useState } from "react"
 import { IoCaretDown } from "react-icons/io5";
 
 
-export default function ServiceOne({ selected, setSelected }) {
+export default function ServiceOne() {
     const [isActive, setIsActive] = useState(false)
     const options = ["Category1", "Category2", "Category3"]
+
+        const [selected, setSelected] = useState(options[0]);
+
+        const submit = () => {
+            console.log(selected);
+            fetch(`http://localhost:8000/challenges`)
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data)
+                    // onSetType(data);
+                });
+        };
     return (
         <div className="containerService1">
             <h1 id="title">Pick your challenege</h1>
             <div className="socialSkills">
-                <button>Random Chaellenge</button>
+                <button onClick={submit}>Random Challenge</button>
                 <div className="dropdown">
                     <div className="dropdown-btn" onClick={(e) => setIsActive(!isActive)}>
                          {selected}
@@ -34,7 +46,7 @@ export default function ServiceOne({ selected, setSelected }) {
                 <button>Pick up line</button>
             </div>
             <div id="text">
-                    <p>this is where all the text is put when a button or a category is clicked above</p>
+                    <p>{}</p>
                 </div>
         </div>
     )
