@@ -11,7 +11,7 @@ module.exports = {
       line: {
         type: Sequelize.STRING
       },
-      lineid: {
+      lineId: {
         type: Sequelize.STRING
       },
       createdAt: {

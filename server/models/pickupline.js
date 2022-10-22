@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   PickupLine.init({
     line: DataTypes.STRING,
-    lineid: DataTypes.STRING
+    lineId: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'PickupLine',

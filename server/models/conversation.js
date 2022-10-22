@@ -14,10 +14,10 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Conversation.init({
-    Conversationtarter: DataTypes.STRING,
+    conversationStarter: DataTypes.STRING,
     category: DataTypes.STRING,
     level: DataTypes.INTEGER,
-    conversationid: DataTypes.STRING
+    conversationId: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Conversation',

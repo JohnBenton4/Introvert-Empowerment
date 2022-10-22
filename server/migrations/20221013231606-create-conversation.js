@@ -8,7 +8,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      conversationstarter: {
+      conversationStarter: {
         type: Sequelize.STRING
       },
       category: {
@@ -17,7 +17,7 @@ module.exports = {
       level: {
         type: Sequelize.INTEGER
       },
-      conversationid: {
+      conversationId: {
         type: Sequelize.STRING
       },
       createdAt: {
