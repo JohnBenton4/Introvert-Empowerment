@@ -157,16 +157,75 @@ form textarea {
   resize: vertical;
   
 }
+/* ------------------------------------------------------------------ */
+
+.containerService1 {
+  background-color: rgb(251, 255, 255);
+  width: 60%;
+  height: auto;
+  border: 1px solid black;
+  margin: auto;
+}
+.socialSkills {
+  display: flex;
+  width: 800px;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  margin: auto;
+  position: relative;
+
+}
+#title {
+  text-align: center;
+}
+#text {
+  text-align: center;
+}
+
+.dropdown {
+  width: 100px;
+  user-select: none;
+  position: relative;
+
+ 
+}
+.dropdown .dropdown-btn {
+  padding: 10px 5px;
+  background-color: aqua;
+  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+}
+
+.dropdown .dropdown-content {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+  font-weight: bold;
+  color: #333;
+  width: 80%;
+}
 
 
+.dropdown .dropdown-content  .dropdown-item {
+  padding: 5px;
+cursor: pointer;
+transition: all 0.2s;
+}
 
-
-
-
-
-
-
-
+.dropdown .dropdown-content  .dropdown-item:hover {
+  background-color: #fff9f9;
+  border: 1px solid black;
+}
 
 
 
