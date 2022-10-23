@@ -1,7 +1,7 @@
-export default function ServiceTwo() {
+export default function ServiceThree() {
     return (
         <>
-        <h1>Service Two</h1>
+        <h1>Service Three</h1>
         </>
     )
 }
