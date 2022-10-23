@@ -25,7 +25,6 @@ function App() {
           <Route path='/challenges' element={<Challenges />} />
           <Route path='/taskmanagement' element={<TaskManagement />} />
           <Route path='/textreminder' element={<TextReminder />} />
-
         </Routes>
         </>
     </div>

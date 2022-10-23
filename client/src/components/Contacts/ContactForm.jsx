@@ -19,7 +19,7 @@ export default function ContactForm() {
     };
     return (
     <>
-         <form ref={form} onSubmit={sendEmail}>
+         <form className='contact-form' ref={form} onSubmit={sendEmail}>
       <label>Name</label>
       <input type="text" name="user_name" />
       <label>Email</label>
