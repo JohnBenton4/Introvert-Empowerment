@@ -2,21 +2,12 @@ const http = require("http");
 var cors = require('cors')
 const hostname = "127.0.0.1";
 const port = 8000;
-
 const express = require("express");
 const app = express();
-
 const server = http.createServer(app);
-
-
 const {Challenge, PickupLine, Conversation, User} = require('./models');
 const user = require("./models/user");
 const jwt = require('jsonwebtoken');
-
-
-// app.get('/', (req, res) => {
-//     res.send('Hello from Express!');
-// });
 
 app.use(cors())
 
@@ -62,7 +53,6 @@ app.post('/login', async (req, res) => {
         res.json({ message: 'failure' });
     }
 }),
-
 
 server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
