@@ -4,7 +4,7 @@ export default function Projects() {
     return (
         <>
         <div className="services">
-        <h1>Services</h1>
+        <h1>Our Services</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos repellat odio natus cum reiciendis nobis fugit error soluta, adipisci quia!</p>
         </div>
         <section className="project-container">

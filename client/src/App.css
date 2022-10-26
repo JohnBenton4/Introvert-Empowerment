@@ -9,7 +9,13 @@
   /* position: fixed; */
   width: 100%;
   height: 90px;
-  background: rgb(13, 255, 0);
+  background: #55917F;
+  color: aliceblue;
+}
+.nav-logo h1 {
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+  text-transform: uppercase;
 }
 
 .navbar-routes {
@@ -19,11 +25,14 @@
 .navbar-routes li {
   padding: 0.5rem;
   list-style-type: none;
+
 }
 
 .navbar-routes a {
   font-size: 1.2rem;
   font-weight: 500;
+  color: aliceblue;
+
 }
 
 h1,
@@ -55,7 +64,7 @@ a {
   right: 50%;
   transform: translate(50%, 50%);
   text-align: center;
-  background-color: aqua;
+  background-color: #e0e1e8;
   width: 50%;
 }
 
@@ -67,15 +76,25 @@ a {
 
 /* About us section */
 .about-container {
-  background-color: blueviolet;
-  height: 20vh;
+  background: #7bd2b8;
+  min-height: 300px;
   width: 100%;
   text-align: center;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.3rem;
 }
 .about-container h1 {
   top: 0;
   margin: 0;
+  padding: 25px 10px 5px 5px ;
+  
 }
+  .about-container p {
+    color: rgb(255, 255, 255);
+    padding: 15px 10px;
+
+  }
+  
 
 /* ------------------------------------------------------------------ */
 /* services section */
@@ -83,7 +102,7 @@ a {
 .project-container {
   /* position: relative; */
   height: 60vh;
-  background-color: violet;
+  background: #88d4bd;
   display: flex;
   justify-content: center;
   /* align-items: center; */
@@ -123,12 +142,20 @@ a {
   color: black;
 }
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: rgb(255, 255, 255);
   transform: rotateY(180deg);
+  color: black;
+
 }
 .services {
   text-align: center;
+  background: #ffffff;
+  font-family: 'Outfit', sans-serif;
+
+}
+.services p {
+  color:rgb(0, 0, 0);
+  padding: 15px 10px;
 }
 
 
