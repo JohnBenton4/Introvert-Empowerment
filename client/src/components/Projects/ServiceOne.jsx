@@ -2,16 +2,17 @@ import { useState } from "react"
 
 export default function ServiceOne() {
 
-    // const [conversation, setConversation] = useState([].conversationStarter)
-    //     const [ challenge, setChallenge] = useState([].challenge)
-    //     const [ pickupline, setPickupline] = useState([].line)
+    const randomConversation = Math.floor(Math.random() * 23)
+    const randomChallenge = Math.floor(Math.random() * 20)
+    const randomPickupline = Math.floor(Math.random() * 12)
+
+
     const [text, setText] = useState("")
         const submit = () => { 
             fetch(`http://localhost:8000/challenges`)
                 .then((response) => response.json())
                 .then((data) => {
-                    setText(data[1].challenge)
-
+                    setText(data[randomChallenge].challenge)
                 });
         };
 
@@ -19,7 +20,7 @@ export default function ServiceOne() {
             fetch(`http://localhost:8000/pickuplines`)
                 .then((response) => response.json())
                 .then((data) => {
-                    setText(data[1].line)
+                    setText(data[randomPickupline].line)
                 });
         };
 
@@ -27,17 +28,22 @@ export default function ServiceOne() {
             fetch(`http://localhost:8000/conversations`)
                 .then((response) => response.json())
                 .then((data) => {
-                    setText(data[1].conversationStarter)
+                    setText(data[randomConversation].conversationStarter)
                 });
         };
         
     return (
+        <>
+        {/* <div className="serviceOneHeading">
+        <h1>A Social  exercise </h1>
+        <p>This service allows you to click a button below and it will spit out a challenge. These exercises will challenge you to get out of your comfort zone and feel accomplished when you complete your task. Pick a challenge from each category and remember the challenge or write it down. You will input the same challenges in our next service.</p>
+        </div> */}
         <div className="containerService1">
             <h1 id="title">Pick your challenege</h1>
             <div className="socialSkills">
-                <button onClick={submit}>Random Challenge</button>
-                <button onClick={click}>Conversation Starter</button>
-                <button onClick={clickHandler}>Pick up line</button>
+                <button  onClick={submit} type="button" class="btn btn-dark">Random Challenge</button>
+                <button onClick={click} type="button" class="btn btn-dark">Conversation Starter</button>
+                <button onClick={clickHandler} type="button" class="btn btn-dark">Pick up line</button>
             </div>
             <div id="text">
 
@@ -45,5 +51,6 @@ export default function ServiceOne() {
 
                 </div>
         </div>
+        </>
     )
 }

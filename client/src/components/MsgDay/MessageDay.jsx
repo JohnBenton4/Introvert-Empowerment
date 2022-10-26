@@ -24,12 +24,12 @@ const MessageDay = () => {
         if (!quotes.length) {
             return "";
         }
-        const quote = quotes[Math.floor(Math.random() * quotes.length)];
+        const quote = quotes[Math.floor(Math.random() * quotes.length)  ];
         return (
-            <div className="css">
-                {quote.text}
+            <div>
+                "{quote.text}"
                 <br></br>
-                {quote.author}
+                -{quote.author}
             </div>
         );
     };
@@ -41,7 +41,7 @@ const MessageDay = () => {
                 <div id="MessageDayContainer">
                     <h1>Message of the day....</h1>
                     <div id="message">
-                        {renderMessageDay()}
+                    {renderMessageDay()}
                     </div>
                 </div>
 
