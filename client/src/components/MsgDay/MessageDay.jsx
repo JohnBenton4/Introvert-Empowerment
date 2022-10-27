@@ -16,7 +16,6 @@ const MessageDay = () => {
             .then(res => res.json())
             .then(quotes => {
                 setQuotes(quotes)
-                console.log(quotes)
             })
     };
 
