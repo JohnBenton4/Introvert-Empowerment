@@ -1,8 +1,10 @@
 import Navbar from "../components/Navbar/Navbar"
 import Footer from "../components/Footer/Footer"
-import TodoForm from "../components/Projects/TaskManagement/TodoForm"
+import TaskForm from "../components/Projects/TaskManagement/TaskForm"
 import { useState } from 'react'
-import TodoItem from "../components/Projects/TaskManagement/TodoItem"
+import TaskItem from "../components/Projects/TaskManagement/TaskItem"
+
+//this is not our code we do not own this part of our code here we followed a youtube tutorial to make a todolist , we give full credit to https://www.youtube.com/channel/UC8efAa0PWX5zGrrYhg2oR1A/featured"
 
 export default function TaskManagement() {
 
@@ -36,10 +38,10 @@ export default function TaskManagement() {
             <Navbar />
             <div className="todo-app">
                 <h1 className="task-title">Task Manager</h1>
-                <TodoForm addTodo={addTodo} />
+                <TaskForm addTodo={addTodo} />
                 {todos.map((todo) => {
                     return (
-                        <TodoItem removeTodo={removeTodo} completeTodo ={completeTodo} todo={todo} key={todo.id}/>
+                        <TaskItem removeTodo={removeTodo} completeTodo ={completeTodo} todo={todo} key={todo.id}/>
                     )
                 })}
             </div>
