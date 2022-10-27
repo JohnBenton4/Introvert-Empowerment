@@ -51,7 +51,7 @@ function LoginAuth({ onSetIsLoggedIn, onSetUserId }) {
 
 
     return (
-        <div className="App">
+        <div className="login-app">
             <h1>Login</h1>
             <form onSubmit={submit}>
                 <input

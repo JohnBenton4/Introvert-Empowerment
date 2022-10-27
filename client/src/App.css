@@ -52,6 +52,9 @@ html {
   width: 100%;
   transition: width 0.3s;
 }
+#loginRoute:hover::after {
+  width: 0%;
+}
 
 h1,
 h1,
@@ -86,7 +89,7 @@ a {
   text-align: center;
   background-color: #f8f8f8;
   width: 50%;
-  height: 230px;
+  height: 240px;
   padding: 30px;
 }
 #MessageDayContainer h1 {
@@ -271,7 +274,7 @@ form textarea {
 .containerService1 {
   background-color: #fffffffe;
   max-width: 50%;
-  height: 40vh;
+  height: 47vh;
   border: 1px solid black;
   margin: 180px auto;
   padding-bottom: 30px;
@@ -312,7 +315,7 @@ text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 1px 40px;
   
 }
 
@@ -477,9 +480,10 @@ text-transform: uppercase;
   }
   #MessageDayContainer {
     width: 80%;
-    height: 30%;
+    height: 39%;
     top: -10%;
   }
+
   .project-container {
     max-width: 100%;
   }

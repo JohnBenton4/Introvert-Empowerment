@@ -21,7 +21,7 @@ export default function Navbar() {
                 <li>
                     <Link to="/about"></Link>
                 </li>
-                <li>
+                <li id="loginRoute">
                     <Link to="/login"><CiUser size={20} style={{ color: "#000000", marginRight: "2rem" }} /></Link>
                 </li>
             </ul>
