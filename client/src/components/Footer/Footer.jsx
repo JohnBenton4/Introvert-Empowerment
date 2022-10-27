@@ -25,7 +25,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <p className="developed">@2022 developed by <a href="">John</a> and <a href="">Omar</a></p>
+                <p className="developed">@2022 developed by <a href="https://www.linkedin.com/in/john-benton/">John</a> and <a href="https://www.linkedin.com/in/omar-rosquero-55403524b/">Omar</a></p>
             </div>
         </div>
     )

@@ -3,6 +3,8 @@ import HomeImage from "../../images/home.jpg"
 import { useState } from "react";
 import { useEffect } from "react";
 
+//we used this api https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373 for the quotes we do not own it and give credit to them.
+
 const MessageDay = () => {
     const [quotes, setQuotes] = useState([]);
 

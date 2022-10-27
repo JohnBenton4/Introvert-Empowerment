@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
-function ServiceTwo(props) {
+//this is not our code we do not own this part of our code here we followed along with a youtube tutorial to make a todolist , we give full credit to https://www.youtube.com/channel/UC8efAa0PWX5zGrrYhg2oR1A/featured"
+function TaskForm(props) {
     const [input, setInput] = useState("")
 
     const handleSubmit = (e) => {
@@ -19,10 +20,9 @@ function ServiceTwo(props) {
           placeholder="Enter Task"
         />
         <button type="submit" className="todo-button">Add</button>  
-
             </div>
       </form>
     )
 }
 
-export default ServiceTwo
+export default TaskForm

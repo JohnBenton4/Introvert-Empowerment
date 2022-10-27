@@ -1,3 +1,5 @@
+//we used a sentence from https://high5test.com/introvert-vs-extrovert-differences/#:~:text=3.,did%20not%20indicate%20a%20response in the "" we give credit to them"
+
 export default function AboutUs() {
     return (
         <div className="about-container">
