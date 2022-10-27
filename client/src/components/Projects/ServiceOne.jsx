@@ -34,10 +34,6 @@ export default function ServiceOne() {
         
     return (
         <>
-        {/* <div className="serviceOneHeading">
-        <h1>A Social  exercise </h1>
-        <p>This service allows you to click a button below and it will spit out a challenge. These exercises will challenge you to get out of your comfort zone and feel accomplished when you complete your task. Pick a challenge from each category and remember the challenge or write it down. You will input the same challenges in our next service.</p>
-        </div> */}
         <div className="containerService1">
             <h1 id="title">Pick your challenege</h1>
             <p>*Click on a button to retrieve challenges from each category. Write down or remember the challenges you received and you will put them into the next service*</p>
