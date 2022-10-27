@@ -1,5 +1,4 @@
 import { DiGithubBadge } from "react-icons/di";
-import { FaTwitterSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { TfiEmail } from "react-icons/tfi";
 
@@ -10,21 +9,19 @@ export default function Footer() {
                 <h1>Follow our socials</h1>
                 <div className="footer-heading">
                     <div className="left">
-                        <p>Johns</p>
+                        <p>John</p>
                         <div className="socials">
-                            <TfiEmail size={40} style={{ color: "#fff", marginRight: "1rem" }} />
-                            <DiGithubBadge size={40} style={{ color: "#fff", marginRight: "1rem" }} />
-                            <FaTwitterSquare size={40} style={{ color: "#fff" , marginRight: "1rem" }} />
-                            <FaLinkedin size={40} style={{ color: "#fff" , marginRight: "1rem" }} />
+                            <a href="mailto:jtbentoniv@gmail.com"><TfiEmail size={40} style={{ color: "#fff", marginRight: "1rem" }} /></a>
+                            <a href="https://github.com/JohnBenton4" target="_blank" rel="noreferrer"><DiGithubBadge size={40} style={{ color: "#fff", marginRight: "1rem" }} /></a>
+                            <a href="https://www.linkedin.com/in/john-benton/" target="_blank" rel="noreferrer"><FaLinkedin size={40} style={{ color: "#fff" , marginRight: "1rem" }} /></a>
                         </div>
                     </div>
                     <div className="left">
-                        <p>Omars</p>
+                        <p>Omar</p>
                         <div className="socials">
-                            <TfiEmail size={40} style={{ color: "#fff" , marginRight: "1rem" }} />
-                            <DiGithubBadge size={40} style={{ color: "#fff" , marginRight: "1rem" }} />
-                            <FaTwitterSquare size={40} style={{ color: "#fff" , marginRight: "1rem"}} />
-                            <FaLinkedin size={40} style={{ color: "#fff" , marginRight: "1rem" }} />
+                            <a href="mailto:omarosquero@gmail.com"><TfiEmail size={40} style={{ color: "#fff" , marginRight: "1rem" }} /></a>
+                            <a href="https://github.com/omardun" target="_blank" rel="noreferrer" ><DiGithubBadge size={40} style={{ color: "#fff" , marginRight: "1rem" }} /></a>
+                            <a href="https://www.linkedin.com/in/omar-rosquero-55403524b/" target="_blank" rel="noreferrer"><FaLinkedin size={40} style={{ color: "#fff" , marginRight: "1rem" }} /></a>
                         </div>
                     </div>
                 </div>

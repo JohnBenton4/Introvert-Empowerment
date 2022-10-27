@@ -40,10 +40,11 @@ export default function ServiceOne() {
         </div> */}
         <div className="containerService1">
             <h1 id="title">Pick your challenege</h1>
+            <p>*Click on a button to retrieve challenges from each category. Write down or remember the challenges you received and you will put them into the next service*</p>
             <div className="socialSkills">
-                <button  onClick={submit} type="button" class="btn btn-dark">Random Challenge</button>
-                <button onClick={click} type="button" class="btn btn-dark">Conversation Starter</button>
-                <button onClick={clickHandler} type="button" class="btn btn-dark">Pick up line</button>
+                <button  onClick={submit} type="button" className="btn btn-dark">Random Challenge</button>
+                <button onClick={click} type="button" className="btn btn-dark">Conversation Starter</button>
+                <button onClick={clickHandler} type="button" className="btn btn-dark">Pick up line</button>
             </div>
             <div id="text">
 

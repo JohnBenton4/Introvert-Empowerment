@@ -5,7 +5,7 @@ export default function Services() {
     return (
         <>
         <Navbar/>
-        <Projects/>
+        <Projects />
         <Footer/>
         </>
         
