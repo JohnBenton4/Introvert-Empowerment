@@ -136,33 +136,26 @@ export default function Projects() {
 
 ## Process
 <p>
-Interiorize was designed to function similarly to the popular clothing subscription service, Stitch Fix. But without professional designers on our payroll, we needed to find a way to mock that personalized functionality with just software. To do that we created a mock database of 100 products gathered from Wayfair. These products were organized into a spreadsheet based on style (modern, farmhouse, contemporary, and bohemian) and room. Price, images, description, color, and brand were also collect from these items. This database is the core of Interiorize and allowed us to successfully mock the basic functionality of a personalized subscription service.
+
 </p>
-<p>View the spreadsheet <a href="https://docs.google.com/spreadsheets/d/1ru5krQQjEa66y6xwguIUm4_JMwNrWN1gAIL9b8eHNOk/edit?usp=sharing">here</a>.</p>
-<p>Frontend design mockup can be viewed <a href="https://www.canva.com/design/DAEmu5jJqUg/tvbk3hckIqgr0xSnjSxYqQ/view?utm_content=DAEmu5jJqUg&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton">here</a>.<p>
+
 
 ## Challenges
 <p>
-A big challenge for our group was working with a database of only 100 items. A bigger database of items would've allowed for us to create style boxes easier and more aligned with customer's style choices. At the moment, color preferences are stored, but not currently being used to filter items. A bigger database would've allowed us to filter items by color.  </p>
+  </p>
 <p>
-Working with our own API was both a challenge and an advantage. We could easily alter routes if we weren't getting the information we needed on the frontend, but some of the PostgreSQL queries eventually became long and complicated.</p>
+</p>
 
 ## Goals
 <ul>
-<li><strong>Admin Dashboard -</strong> If Interiorize needed to be production ready for a business, it would need an admin dashboard. From the admin dashboard, employees would be able to see user's quiz results, recent transactions, and more. 
+<li><strong>Goal 1 -</strong> 
 </li>
-<li><strong>Reviews -</strong> Adding functionality for users to be able to review previous orders. Rather than displaying these reviews to the public, this information would go back to the "stylists" to better inform their decisions for the next box.</li>
-<li><strong>Payment -</strong> During our two weeks of active development, we were not able to implement any sort of mock payment setup. Adding a payment page would have been the final touch to the ecommerce portion of the project.</li>
+<li><strong>Goal 2 -</strong> </li>
+<li><strong>Goal 3 -</strong> </li>
 </ul>
 
 ## Contributors
-<a href="https://github.com/sarahdepalo">Sarah dePalo</a> - Technical writer, user profile and style quiz design and functionality. Shopping cart calculations and item removal
+<a href="https://github.com/JohnBenton4">John Benton</a> - roles here
 </br>
-<a href="https://github.com/zach-a-g">Zach Gleeson</a> - Homepage, shop intro, item details, and shopping cart design and functionality
-</br>
-<a href="https://github.com/logancooper">Logan Cooper</a> - Project manager, seeding and setup of database, setup of generateOrder and shopSearch routes
-</br>
-<a href="https://github.com/natelee3">Nate Lee</a> - Creating and securing API, frontend and backend deployment, auth0 integration, API docs
-</br>
-</br>
-<p>Don't forget to checkout the <a href="https://github.com/natelee3/interiorize-backend">backend code</a> and the API! </p>
+<a href="https://github.com/omardun">Omar Rosquero</a> - roles here
+
