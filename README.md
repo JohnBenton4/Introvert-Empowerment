@@ -10,9 +10,6 @@ Active Development: 10/6/2022 - 10/27/2022
 <p>
 Introvert Empowerment was built for those of us in the world who know ourself as an introvert but would like to be more outgoing from time to time. Users can access many features including: challenges, a task manager, pickup lines, and more that can help embolden and give confidence. Another encouraging feature of Intrivert Empowerment is the 'Message of the Day' on its landing page. This message is pulled from an API that provides uplifting quotes to start the users' day off right.
 </p>
-<p>
-We'd love for you to feel empowered too at [!Introvert Empowerment Demo] (./images/Demo.png)] <a href="https://youtu.be/INj1jUsurRU">Introvert Empowerment</a>!
-</p>
 
 ## Demo
 [![Introvert Empowerment Demo](./images/Demo.png)](https://youtu.be/INj1jUsurRU "Interiorize Demo")
