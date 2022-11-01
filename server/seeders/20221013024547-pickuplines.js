@@ -6,7 +6,7 @@ module.exports = {
       'PickupLines', 
       [
         {
-          line: 'Ask someone if they speak a language other than English. Ask them how they say, “I love you” in that language. Then tell them you are taken, but you will take their number.',
+          line: 'Ask someone if they speak a language other than English. Ask them how they say, “I love you” in that language. Then tell they are moving a little fast, but you will at least take their number.',
           lineId: 'id001',
           createdAt: new Date(),
           updatedAt: new Date()
@@ -18,7 +18,7 @@ module.exports = {
           updatedAt: new Date()
         },
         {
-          line: 'With earbuds in as if you are on a call, walk up next to someone and ask out loud if they walk to go grab a drink. (The person will think you are talking to them) You can respond that you are on the phone, but you will go with them anyway.',
+          line: 'With earbuds in as if you are on a call, walk up next to someone and ask out loud if they want to go grab a drink. (The person will think you are talking to them) If they respond in the affirmative, you can respond that you are on the phone, but you will go with them anyway.',
           lineId: 'id003',
           createdAt: new Date(),
           updatedAt: new Date()
@@ -48,7 +48,7 @@ module.exports = {
           updatedAt: new Date()
         },
         {
-          line: 'Hey, do you have a pen I can borrow? (Receive pen and act like you are writing something) Your pen does not work. (They respond that it does work) Then try writing your number down right here.',
+          line: 'Hey, do you have a pen I can borrow? (Receive pen and act like you are writing something) Tell them that their pen does not work. (They respond that it does work) Say: then try writing your number down right here.',
           lineId: 'id008',
           createdAt: new Date(),
           updatedAt: new Date()
@@ -66,13 +66,13 @@ module.exports = {
           updatedAt: new Date()
         },
         {
-          line: 'Hey, what do you have on your to-do list today? Well why do not you add me on there because I would love to grab a drink with you.',
+          line: 'Hey, what do you have on your to-do list today? Well how about you add me on there, because I would love to grab a drink with you.',
           lineId: 'id011',
           createdAt: new Date(),
           updatedAt: new Date()
         },
         {
-          line: 'Hey, what was your favorite subject in school? Well, mine was math because I am pretty good with numbers. Why do not you give me yours and I will prove it?',
+          line: 'Hey, what was your favorite subject in school? Well, mine was math because I am pretty good with numbers. How about you give me yours and I will prove it?',
           lineId: 'id012',
           createdAt: new Date(),
           updatedAt: new Date()
