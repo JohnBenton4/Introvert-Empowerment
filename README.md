@@ -8,25 +8,23 @@ Introvert Empowerment
 Active Development: 10/6/2022 - 10/27/2022
 </p>
 <p>
-Introvert Empowerment was built for those of us in the world who know ourself as an introvert but would like to be more outgoing from time to time. Users can access many features including: challenges, a task manager, pickup lines, and more that can help embolden and give confidence. Another encouraging feature of Intrivert Empowerment is the 'Message of the Day' that is on the landing page. This message is pulled from an API that provides uplifting quotes to start the users' day off right.
+Introvert Empowerment was built for those of us in the world who know ourself as an introvert but would like to be more outgoing from time to time. Users can access many features including: challenges, a task manager, pickup lines, and more that can help embolden and give confidence. Another encouraging feature of Intrivert Empowerment is the 'Message of the Day' on its landing page. This message is pulled from an API that provides uplifting quotes to start the users' day off right.
 </p>
 <p>
-We'd love for you to feel empowered too at <a href="live link coming soon">Introvert Empowerment</a>!
+We'd love for you to feel empowered too at [!Introvert Empowerment Demo] (./images/Demo.png)] <a href="https://youtu.be/INj1jUsurRU">Introvert Empowerment</a>!
 </p>
 
 ## Demo
-[Introvert Empowerment Demo]
+[![Introvert Empowerment Demo](./images/Demo.png)](https://youtu.be/INj1jUsurRU "Interiorize Demo")
 
 ## Features
 <ul>
-<li><strong>Social Challenges - </strong>These challenges have separate categories, which the user will be able to select from (forth coming). Examples of categories include: social environments, workplace, school setting, and more.</li>
-<li><strong>Random Challenge - </strong>This portion of the app is used as a extra difficult challenge to push those who feel inspired to truly be outgoing. These differ from Conversation Starters because they require much more social interaction and usually put the user in a potentially socially volernable situation. The Radnom Challenges can not be individually selected and the user is encouraged to only request a challenge if they are commited to doing whatever the challenge reads.</li>
-<li><strong>Conversation Starters - </strong>Conversation Starters are a gentle way to dip a users' toes in the waters of being socializing. We encourage the user to request Conversation Starters until they find on that they feel comfortable trying. We will later create individual selectors based on categories so users can target results that best suite their situation.</li>
-<li><strong>Pickup Lines - </strong>Although not all of the pickup lines have been thoughly tested in the real world, we feel confident you will at least get a smile in return.</li>
-<li><strong>User Profile - </strong>The users profile shows tiems saved in the task manager. They can also add and remove items from the task manager as needed.</li>
-<li><strong>Task Manager - </strong>A task manager was essential to this project. Users will be able to store social challenges that are useful to them and be able to reference them for future personal growth.</li>
-
-
+<li><strong>Social Challenges - </strong>These challenges have separate categories, from which the user will be able to select (forth coming). Examples of categories include: random challenges, conversation starters, and pickup lines.</li>
+<li><strong>Random Challenge - </strong>This portion of the app is used as a extra difficult challenge to push those who feel inspired to truly be outgoing. These differ from Conversation Starters because they require much more social interaction and put the user in a potentially socially vulnerable situation. The Random Challenges can not be individually selected, and the user is encouraged to only request a challenge if they are commited to the challenge.</li>
+<li><strong>Conversation Starters - </strong>Conversation Starters are a gentle way to dip a users' toes in the waters of socializing. We encourage the user to request Conversation Starters until they find one that they feel comfortable trying. Future plans include creating individual selectors based on categories so users can target results that best suite their situation.</li>
+<li><strong>Pickup Lines - </strong>Although not all of the pickup lines have been thoughly tested in the real world, we feel confident you will at least walk away with a smile on your face and your intended audience.</li>
+<li><strong>User Profile - </strong>The user's profile shows items saved in the Task Manager (forth coming). They can also add and remove items from the Task Manager as needed.</li>
+<li><strong>Task Manager - </strong>A Task Manager was essential to this project. Users can store social challenges and pickup lines that are useful to them and be able to reference them for future personal growth.</li>
 </ul>
 
 ## Technologies
@@ -93,7 +91,7 @@ module.exports = (sequelize, DataTypes) => {
   return User;
 };
 ```
-Sample of our services page.
+Sample of our Services page.
 ```javascript
 import { Link } from "react-router-dom"
 export default function Projects() {
@@ -111,7 +109,7 @@ export default function Projects() {
                     </div>
                     <div className="flip-card-back">
                         <h2>Social Challenges</h2>
-                        <p>Social challenges allows you to choose from any category and it will spit out challenges for your to complete. Write them down and input them into the task manager</p>
+                        <p>Social Challenges allow you to choose from any category and it will return challenges for you to complete. Write them down and add them to the task manager</p>
                         <Link to="/challenges">
                         <button type="button" className="btn btn-dark">Start</button>
                     </Link>                    </div>
@@ -124,7 +122,7 @@ export default function Projects() {
                     </div>
                     <div className="flip-card-back">
                         <h2>Task Manager</h2>
-                        <p>The task manager allows you to input your challenges and mark them complete when finished and delete them afterwards.</p>
+                        <p>The Task Manager allows you to input your challenges and mark them complete when finished and delete them afterwards.</p>
                         <Link to="/taskmanagement">
                         <button type="button" className="btn btn-dark">Start</button>
                     </Link>
@@ -136,25 +134,25 @@ export default function Projects() {
 
 
 ## Process
-<p>Introvert Empowerment was designed to not only give introverts looking for ways to be more out going techniques to practice in public settings, but it is also designed to be unintimidating and encouraging at the same time. The heart of the app is the database we created that houses all the challenges, pickup lines, and conversation starters. We also left room for growth in the app and will include phone notification technology and ways for users to save there progress and share with friends as well.
+<p>Introvert Empowerment was designed to give introverts looking to be more out going, techniques to practice in public settings. It is also designed to be unintimidating and encouraging at the same time. The heart of the app is the database we created that houses all the challenges, pickup lines, and conversation starters. We also left room for growth in the app and will include phone notification technology and ways for users to save there preferences and share with friends as well.
 </p>
 
 
 ## Challenges
-<p>One of the biggest challenges was getting the login screen to verify the users credentials and then sending the user to their personal homepage once they click 'Login'. This functionality is still ongoing and we hope to have it complete very soon.
+<p>One of the biggest challenges was getting the login screen to verify the users credentials and then sending the user to their personal homepage once they click 'Login'. This functionality is still underway and we hope to have it completed very soon.
   </p>
-<p>A second aspect that was both a challenge and an advantage was creating our own databases. Although we were able to tune the tables in a manor that was most useful for us, it meant we had to spend extra time creating the tables and being extra decisive about what information the tables would hold.
+<p>A second aspect that was both a challenge and an advantage was creating our own databases. Although we were able to refine the tables in a manor that was most useful for us, it meant we had to spend extra time creating the tables and being extra decisive about what information the tables would be most benficial.
 </p>
 
 ## Goals
 <ul>
-<li><strong>Login - Our first goal is to get the personal login complete so users can save challenges or pickup lines to their profile.</strong> 
+<li><strong>Login - Our first goal is to get the personal login complete so users can save challenges, conversation starters, or pickup lines to their profile.</strong> 
 </li>
-<li><strong>Mobile Notifications - althogh setting up a simple mobile notification is possible, making it work with a full0stack application is a larger feet for sure. This would be a great feature to have and I know it won't be long before we have the cide set up.</strong> </li>
+<li><strong>Mobile Notifications - Although setting up a simple mobile notification is possible, making it work with a full-stack application is a much larger undertaking. This would be a great feature to have, and I know it won't be long before we launch that portion of the app.</strong> </li>
 </ul>
 
 ## Contributors
-<a href="https://github.com/JohnBenton4">John Benton</a> - roles here
+<a href="https://github.com/JohnBenton4">John Benton</a> - Project manager, API creator, backend deployment, user profile, database seeding and setup
 </br>
-<a href="https://github.com/omardun">Omar Rosquero</a> - roles here
+<a href="https://github.com/omardun">Omar Rosquero</a> - Frontend manager, visual design, React lead, routes architech
 
