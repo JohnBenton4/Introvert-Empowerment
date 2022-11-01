@@ -34,14 +34,14 @@ module.exports = {
       updatedAt: new Date()
     },
     {
-      challenge: 'Go to a movie in the park and sit close to people you don not know. Start a conversation with them.',
+      challenge: 'Go to a movie in the park and sit close to people you do not know. Start a conversation with them.',
       category: 'Social',
       uniqueId: 'id005',
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
-      challenge: 'Host a movie night at your home/apartment with friends. Be sure to engage in conversation andn dialog.',
+      challenge: 'Host a movie night at your home/apartment with friends. Be sure to engage in conversation before and after the movie.',
       category: 'Social',
       uniqueId: 'id006',
       createdAt: new Date(),
@@ -97,7 +97,7 @@ module.exports = {
       updatedAt: new Date()
     },
     {
-      challenge: 'Play a pick up sports game at the park. Ask people to go out for coffee or drinks after class.' ,
+      challenge: 'Play a pick up sports game at the park. Ask people to go out for coffee or drinks after the game.' ,
       category: 'Social',
       uniqueId: 'id014',
       createdAt: new Date(),
