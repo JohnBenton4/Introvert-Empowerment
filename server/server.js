@@ -15,13 +15,8 @@ const db = require("./models");
 app.use(cors())
 app.use(express.json())
 
-
 //authenticate will run and if it passes the test it will finally go to the function
 
-// app.get('/challenges', authenticate, async (req, res) => {
-//     const challenges = await Challenge.findAll();
-//     res.json(challenges);
-// });
 
 app.get('/challenges', async (req, res) => {
     const challenges = await Challenge.findAll();
