@@ -22,7 +22,7 @@ export default function ContactForm() {
             <form className='contact-form' ref={form} onSubmit={sendEmail}>
             <div id='contact'>
             <h1>Contact us</h1>
-            <p> Leave  us a message below on how we can furthmore help you or if you have any questions.</p>
+            <p> Leave us a message below if you have any questions or would like to know how we can help you further.</p>
             </div>
                 <label>Name</label>
                 <input type="text" name="user_name" />
