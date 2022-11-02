@@ -12,7 +12,7 @@ Introvert Empowerment was built for those of us in the world who know ourself as
 </p>
 
 ## Demo
-[![Introvert Empowerment Demo](./images/Demo.png)](https://youtu.be/INj1jUsurRU "Interiorize Demo")
+[![Introvert Empowerment Demo](./images/Demo.png)](https://youtu.be/INj1jUsurRU "Introvert Empowerment Demo")
 
 ## Features
 <ul>
@@ -23,6 +23,10 @@ Introvert Empowerment was built for those of us in the world who know ourself as
 <li><strong>User Profile - </strong>The user's profile shows items saved in the Task Manager (forth coming). They can also add and remove items from the Task Manager as needed.</li>
 <li><strong>Task Manager - </strong>A Task Manager was essential to this project. Users can store social challenges and pickup lines that are useful to them and be able to reference them for future personal growth.</li>
 </ul>
+
+## Project Board
+<p>Our project board which lays out our design ideas and vision can be found<a href="https://miro.com/app/board/uXjVPPo33Ao=/">Here.</a>
+</p>
 
 ## Technologies
 <ul>
@@ -128,7 +132,6 @@ export default function Projects() {
            </div> 
            
 ```
-
 
 ## Process
 <p>Introvert Empowerment was designed to give introverts looking to be more out going, techniques to practice in public settings. It is also designed to be unintimidating and encouraging at the same time. The heart of the app is the database we created that houses all the challenges, pickup lines, and conversation starters. We also left room for growth in the app and will include phone notification technology and ways for users to save there preferences and share with friends as well.
