@@ -25,7 +25,7 @@ Introvert Empowerment was built for those of us in the world who know ourself as
 </ul>
 
 ## Project Board
-<p>Our project board which lays out our design ideas and vision can be found<a href="https://miro.com/app/board/uXjVPPo33Ao=/">Here.</a>
+<p>Our project board which lays out our design ideas and vision can be found<a href="https://miro.com/app/board/uXjVPPo33Ao=/"> Here.</a>
 </p>
 
 ## Technologies
