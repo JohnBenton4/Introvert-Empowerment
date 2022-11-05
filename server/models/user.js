@@ -9,21 +9,21 @@ module.exports = (sequelize, DataTypes) => {
       User.belongsToMany(models.Challenge, {
         as: 'challenges',
         through: models.UserChallenge,
-        forignKey: 'userId',
+        foreignKey: 'userId',
         otherKey: 'challengeId',
       });
 
       User.belongsToMany(models.Conversation, {
         as: 'conversations',
         through: models.UserConversation,
-        forignKey: 'userId',
+        foreignKey: 'userId',
         otherKey: 'conversationId',
       });
 
       User.belongsToMany(models.PickupLine, {
         as: 'pickuplines',
         through: models.UserPickupLine,
-        forignKey: 'userId',
+        foreignKey: 'userId',
         otherKey: 'pickupLineId',
       });
     }

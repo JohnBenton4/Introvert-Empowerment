@@ -48,7 +48,7 @@ module.exports = {
       updatedAt: new Date()
     },
     {
-      challenge: 'Make a short movie with firends. Be the protagonist who goes out of the way to be outgoing.',
+      challenge: 'Make a short movie with friends. Be the protagonist who goes out of the way to be outgoing.',
       category: 'Social',
       uniqueId: 'id007',
       createdAt: new Date(),
@@ -139,7 +139,7 @@ module.exports = {
       updatedAt: new Date()
     },
     {
-      challenge: 'Sign up for a coding bookcamp. Always be the one to check-in with your classmates and teachers.',
+      challenge: 'Sign up for a coding book camp. Always be the one to check-in with your classmates and teachers.',
       category: 'Work',
       uniqueId: 'id020',
       createdAt: new Date(),

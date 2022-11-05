@@ -57,7 +57,7 @@ app.post('/login', async (req, res) => {
         console.log(user.password)
         //generate the json web token
         if (!match) {
-            //response with not authentiated
+            //response with not authenticated
             
         return res.json({ success: false, message: 'Wrong password' })
         }
@@ -69,7 +69,7 @@ app.post('/login', async (req, res) => {
         }
     
     } else {
-        //response with not authentiated
+        //response with not authenticated
         res.json({ success: false, message: 'Not a User' })
     }
 })

@@ -8,7 +8,7 @@ Introvert Empowerment
 Active Development: 10/6/2022 - 10/27/2022
 </p>
 <p>
-Introvert Empowerment was built for those of us in the world who know ourself as an introvert but would like to be more outgoing from time to time. Users can access many features including: challenges, a task manager, pickup lines, and more that can help embolden and give confidence. Another encouraging feature of Intrivert Empowerment is the 'Message of the Day' on its landing page. This message is pulled from an API that provides uplifting quotes to start the users' day off right.
+Introvert Empowerment was built for those of us in the world who know ourself as an introvert but would like to be more outgoing from time to time. Users can access many features including: challenges, a task manager, pickup lines, and more that can help embolden and give confidence. Another encouraging feature of Introvert Empowerment is the 'Message of the Day' on its landing page. This message is pulled from an API that provides uplifting quotes to start the users' day off right.
 </p>
 
 ## Demo
@@ -17,9 +17,9 @@ Introvert Empowerment was built for those of us in the world who know ourself as
 ## Features
 <ul>
 <li><strong>Social Challenges - </strong>These challenges have separate categories, from which the user will be able to select (forth coming). Examples of categories include: random challenges, conversation starters, and pickup lines.</li>
-<li><strong>Random Challenge - </strong>This portion of the app is used as a extra difficult challenge to push those who feel inspired to truly be outgoing. These differ from Conversation Starters because they require much more social interaction and put the user in a potentially socially vulnerable situation. The Random Challenges can not be individually selected, and the user is encouraged to only request a challenge if they are commited to the challenge.</li>
+<li><strong>Random Challenge - </strong>This portion of the app is used as a extra difficult challenge to push those who feel inspired to truly be outgoing. These differ from Conversation Starters because they require much more social interaction and put the user in a potentially socially vulnerable situation. The Random Challenges can not be individually selected, and the user is encouraged to only request a challenge if they are committed to the challenge.</li>
 <li><strong>Conversation Starters - </strong>Conversation Starters are a gentle way to dip a users' toes in the waters of socializing. We encourage the user to request Conversation Starters until they find one that they feel comfortable trying. Future plans include creating individual selectors based on categories so users can target results that best suite their situation.</li>
-<li><strong>Pickup Lines - </strong>Although not all of the pickup lines have been thoughly tested in the real world, we feel confident you will at least walk away with a smile on your face and your intended audience.</li>
+<li><strong>Pickup Lines - </strong>Although not all of the pickup lines have been thoroughly tested in the real world, we feel confident you will at least walk away with a smile on your face and your intended audience.</li>
 <li><strong>User Profile - </strong>The user's profile shows items saved in the Task Manager (forth coming). They can also add and remove items from the Task Manager as needed.</li>
 <li><strong>Task Manager - </strong>A Task Manager was essential to this project. Users can store social challenges and pickup lines that are useful to them and be able to reference them for future personal growth.</li>
 </ul>
@@ -56,21 +56,21 @@ module.exports = (sequelize, DataTypes) => {
       User.belongsToMany(models.Challenge, {
         as: 'challenges',
         through: models.UserChallenge,
-        forignKey: 'userId',
+        foreignKey: 'userId',
         otherKey: 'challengeId',
       });
 
       User.belongsToMany(models.Conversation, {
         as: 'conversations',
         through: models.UserConversation,
-        forignKey: 'userId',
+        foreignKey: 'userId',
         otherKey: 'conversationId',
       });
 
       User.belongsToMany(models.PickupLine, {
         as: 'pickuplines',
         through: models.UserPickupLine,
-        forignKey: 'userId',
+        foreignKey: 'userId',
         otherKey: 'pickupLineId',
       });
     }
@@ -141,7 +141,7 @@ export default function Projects() {
 ## Challenges
 <p>One of the biggest challenges was getting the login screen to verify the users credentials and then sending the user to their personal homepage once they click 'Login'. This functionality is still underway and we hope to have it completed very soon.
   </p>
-<p>A second aspect that was both a challenge and an advantage was creating our own databases. Although we were able to refine the tables in a manor that was most useful for us, it meant we had to spend extra time creating the tables and being extra decisive about what information the tables would be most benficial.
+<p>A second aspect that was both a challenge and an advantage was creating our own databases. Although we were able to refine the tables in a manor that was most useful for us, it meant we had to spend extra time creating the tables and being extra decisive about what information the tables would be most beneficial.
 </p>
 
 ## Goals
@@ -154,5 +154,5 @@ export default function Projects() {
 ## Contributors
 <a href="https://github.com/JohnBenton4">John Benton</a> - Project manager, API creator, backend deployment, user profile, database seeding and setup
 </br>
-<a href="https://github.com/omardun">Omar Rosquero</a> - Frontend manager, visual design, React lead, routes architech
+<a href="https://github.com/omardun">Omar Rosquero</a> - Frontend manager, visual design, React lead, routes architect
 

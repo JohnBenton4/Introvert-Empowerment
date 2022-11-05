@@ -22,7 +22,7 @@ module.exports = {
           updatedAt: new Date()
         },
         {
-          conversationStarter: 'Ask a journey question to a co-worker. Like - how did you go from working for Walmrt to becoming the senior manager of A.I.?',
+          conversationStarter: 'Ask a journey question to a co-worker. Like - how did you go from working for Walmart to becoming the senior manager of A.I.?',
           category: 'Work',
           level: '1',
           conversationId: 'idW003',
@@ -46,7 +46,7 @@ module.exports = {
           updatedAt: new Date()
         },
         {
-          conversationStarter: 'Have a meaningful one-on-one convesation with a co-worker about something that matters to you instead of just chatting in a group of people.',
+          conversationStarter: 'Have a meaningful one-on-one conversation with a co-worker about something that matters to you instead of just chatting in a group of people.',
           category: 'Work',
           level: '2',
           conversationId: 'idW006',
@@ -70,7 +70,7 @@ module.exports = {
           updatedAt: new Date()
         },
         {
-          conversationStarter: 'Ask someone what kind of music they liek listening to. Try to relate to their answer and tell them what kind of music you like.',
+          conversationStarter: 'Ask someone what kind of music they like listening to. Try to relate to their answer and tell them what kind of music you like.',
           category: 'Work',
           level: '1',
           conversationId: 'idW009',
@@ -78,7 +78,7 @@ module.exports = {
           updatedAt: new Date()
         },
         {
-          conversationStarter: 'Let a trusted firend know that you are going to make it a point to leave sarcasm out of all your conversations today. Have your friend hold you accountable.',
+          conversationStarter: 'Let a trusted friend know that you are going to make it a point to leave sarcasm out of all your conversations today. Have your friend hold you accountable.',
           category: 'Social',
           level: '3',
           conversationId: 'idS001',
@@ -86,7 +86,7 @@ module.exports = {
           updatedAt: new Date()
         },
         {
-          conversationStarter: 'Let a trusted firend know that you are going to make it a point to leave complaining out of all your conversations today. Have your friend hold you accountable.',
+          conversationStarter: 'Let a trusted friend know that you are going to make it a point to leave complaining out of all your conversations today. Have your friend hold you accountable.',
           category: 'Social',
           level: '3',
           conversationId: 'idS002',
@@ -110,7 +110,7 @@ module.exports = {
           updatedAt: new Date()
         },
         {
-          conversationStarter: 'Try exiting a conversation gracefully instead of interupting the flow and running for the door. A good way to begin your exist is - it was great meeting you and I hope we can talk again.',
+          conversationStarter: 'Try exiting a conversation gracefully instead of interrupting the flow and running for the door. A good way to begin your exist is - it was great meeting you and I hope we can talk again.',
           category: 'Social',
           level: '2',
           conversationId: 'ids005',
