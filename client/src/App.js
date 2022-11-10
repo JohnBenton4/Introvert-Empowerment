@@ -1,15 +1,9 @@
 import React from 'react';
 import './index.css';
 import { Routes, Route } from "react-router-dom"
-import Contact from "../src/routes/Contact"
-import Services from './routes/Services';
-import Login from './routes/Login';
-import Register from './routes/Register';
-import Home from "./routes/Home"
-import "./App.css"
-import Challenges from './routes/Challenges';
-import TaskManagement from './routes/TaskManagement';
-import TextReminder from './routes/TextReminder';
+import "./App.css";
+import { Challenges, Contact, Home, Login, Register, Services, TaskManagement, TextReminder } from './routes';
+
 function App() {
   return (
     <div className="App">

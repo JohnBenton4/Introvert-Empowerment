@@ -1,53 +1,47 @@
 import React from "react";
-import HomeImage from "../../images/home.jpg"
+import HomeImage from "../../images/home.jpg";
 import { useState } from "react";
 import { useEffect } from "react";
 
 //we used this api https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373 for the quotes we do not own it and give credit to them.
 
 const MessageDay = () => {
-    const [quotes, setQuotes] = useState([]);
+  const [quotes, setQuotes] = useState([]);
 
-    useEffect(() => {
-        getAPI()
-    }, [])
+  useEffect(() => {
+    getAPI();
+  }, []);
 
-    const getAPI = () => {
-        fetch("https://type.fit/api/quotes")
+  const getAPI = () => {
+    fetch("https://type.fit/api/quotes")
+      .then((res) => res.json())
+      .then((quotes) => {
+        setQuotes(quotes);
+      });
+  };
 
-            .then(res => res.json())
-            .then(quotes => {
-                setQuotes(quotes)
-            })
-    };
-
-    const renderMessageDay = () => {
-        if (!quotes.length) {
-            return "";
-        }
-        const quote = quotes[Math.floor(Math.random() * quotes.length)  ];
-        return (
-            <div>
-                "{quote.text}"
-                <br></br>
-                -{quote.author}
-            </div>
-        );
-    };
-
+  const renderMessageDay = () => {
+    if (!quotes.length) {
+      return "";
+    }
+    const quote = quotes[Math.floor(Math.random() * quotes.length)];
     return (
-        <div className="container">
-            <div className="sub-container">
-                <img className="home-image" src={HomeImage} alt="Homeimage" />
-                <div id="MessageDayContainer">
-                    <h1>Message of the day....</h1>
-                    <div id="message">
-                    {renderMessageDay()}
-                    </div>
-                </div>
+      <div>
+        "{quote.text}"<br></br>-{quote.author}
+      </div>
+    );
+  };
 
-            </div>
+  return (
+    <div className="container">
+      <div className="sub-container">
+        <img className="home-image" src={HomeImage} alt="Homeimage" />
+        <div id="MessageDayContainer">
+          <h1>Message of the day....</h1>
+          <div id="message">{renderMessageDay()}</div>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 export default MessageDay;
