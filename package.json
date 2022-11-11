@@ -4,7 +4,7 @@
   "description": "<h1 align= \"center\"> Introvert Empowerment </h1>",
   "main": "index.js",
   "scripts": {
-    "start" : "node index.js",
+    "start" : "react-scripts start && node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
     
   },
