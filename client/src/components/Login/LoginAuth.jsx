@@ -16,7 +16,7 @@ function LoginAuth({ onSetIsLoggedIn, onSetUserId }) {
   const submit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch("http://localhost:8000/login", {
+      const response = await fetch("http://localhost:8080/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
