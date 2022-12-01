@@ -61,7 +61,7 @@ function LoginAuth({ onSetIsLoggedIn, onSetUserId }) {
           placeholder="Enter password"
         />
         <button
-          href="http://localhost:8000/"
+          href="http://localhost:8080/"
           variant="primary"
           className="mt-3"
           type="submit"

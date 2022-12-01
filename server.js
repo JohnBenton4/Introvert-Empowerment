@@ -1,19 +1,17 @@
 // const hostname = "127.0.0.1";
-// const port = 8000;
+// const port = 8080;
 // const server = http.createServer(app);
 // const user = require("./models/user");
 // const bcrypt = require('bcrypt');
 // const db = require("./models");
 // const jwt = require('jsonwebtoken');
-const app = express();
-
-
-
+// const app = express();
 
 const http = require("http");
-const cors = require('cors');
+const cors = require("cors");
 const express = require("express");
-const { Challenge, PickupLine, Conversation, User } = require('./models');
+const { Challenge, PickupLine, Conversation, User } = require("./models");
+const path = require('path');
 
 const server = express();
 
@@ -21,60 +19,55 @@ server.use(cors());
 server.use(express.json());
 server.use(express.static(path.resolve(`${__dirname}/client/build`)));
 
-server.get('*', (req, res) => {
-    res.sendFile(path.resolve(`${__dirname}/client/build/index.html`));
-})
+server.get("*", (req, res) => {
+  res.sendFile(path.resolve(`${__dirname}/client/build/index.html`));
+});
 
 //authenticate will run and if it passes the test it will finally go to the function
 
-// server.get('/challenges', async (req, res) => {
+server.get("/challenges", async (req, res) => {
+  const challenges = await Challenge.findAll();
+  res.json(challenges);
+});
+
+server.get("/pickuplines", async (req, res) => {
+  const pickuplines = await PickupLine.findAll();
+  res.json(pickuplines);
+});
+
+server.get("/conversations", async (req, res) => {
+  const conversations = await Conversation.findAll();
+  res.json(conversations);
+});
+
+server.get("/users", async (req, res) => {
+  const users = await User.findAll();
+  res.json(users);
+});
+
+// app.get('/challenges', async (req, res) => {
 //     const challenges = await Challenge.findAll();
 //     res.json(challenges);
 // });
 
-// server.get('/pickuplines', async (req, res) => {
+// app.get('/pickuplines', async (req, res) => {
 //     const pickuplines = await PickupLine.findAll();
 //     res.json(pickuplines);
 // });
 
-// server.get('/conversations', async (req, res) => {
+// app.get('/conversations', async (req, res) => {
 //     const conversations = await Conversation.findAll();
 //     res.json(conversations);
 // });
 
-// server.get('/users', async (req, res) => {
+// app.get('/users', async (req, res) => {
 //     const users = await User.findAll();
 //     res.json(users);
 // });
 
-
-
-
-app.get('/challenges', async (req, res) => {
-    const challenges = await Challenge.findAll();
-    res.json(challenges);
+server.listen (8080, () => {
+  console.log("The server is listening at PORT 8080.");
 });
-
-app.get('/pickuplines', async (req, res) => {
-    const pickuplines = await PickupLine.findAll();
-    res.json(pickuplines);
-});
-
-app.get('/conversations', async (req, res) => {
-    const conversations = await Conversation.findAll();
-    res.json(conversations);
-});
-
-app.get('/users', async (req, res) => {
-    const users = await User.findAll();
-    res.json(users);
-});
-
-
-server.listen(8080, () => {
-    console.log('The server is listening at PORT 8080.')
-});
-
 
 // app.post('/login', async (req, res) => {
 
@@ -95,7 +88,7 @@ server.listen(8080, () => {
 //         //generate the json web token
 //         if (!match) {
 //             //response with not authenticated
-            
+
 //         return res.json({ success: false, message: 'Wrong password' })
 //         }
 //         else {
@@ -104,18 +97,13 @@ server.listen(8080, () => {
 //             res.json(result)
 //             console.log(result.success)
 //         }
-    
+
 //     } else {
 //         //response with not authenticated
 //         res.json({ success: false, message: 'Not a User' })
 //     }
 // })
 
-
-
-
-
 // server.listen(port, hostname, () => {
 //     console.log(`Server running at http://${hostname}:${port}/`);
 // });
-
