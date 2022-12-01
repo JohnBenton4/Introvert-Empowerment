@@ -7,7 +7,7 @@ export default function ServiceOne() {
 
   const [text, setText] = useState("");
   const submit = () => {
-    fetch(`http://localhost:8000/challenges`)
+    fetch(`http://localhost:8080/challenges`)
       .then((response) => response.json())
       .then((data) => {
         setText(data[randomChallenge].challenge);
@@ -15,7 +15,7 @@ export default function ServiceOne() {
   };
 
   const clickHandler = () => {
-    fetch(`http://localhost:8000/pickuplines`)
+    fetch(`http://localhost:8080/pickuplines`)
       .then((response) => response.json())
       .then((data) => {
         setText(data[randomPickupline].line);
@@ -23,7 +23,7 @@ export default function ServiceOne() {
   };
 
   const click = () => {
-    fetch(`http://localhost:8000/conversations`)
+    fetch(`http://localhost:8080/conversations`)
       .then((response) => response.json())
       .then((data) => {
         setText(data[randomConversation].conversationStarter);
