@@ -1,5 +1,5 @@
 const hostname = "127.0.0.1";
-const port = 8080;
+const PORT = 8080;
 // const server = http.createServer(app);
 const user = require("./models/user");
 const bcrypt = require('bcrypt');
@@ -103,9 +103,10 @@ server.get("*", (req, res) => {
 //     res.json(users);
 // });
 
-server.listen (8080, () => {
-  console.log("The server is listening at PORT 8080.");
-});
+
+app.listen(process.env.PORT || 8080, function(){
+    console.log(`The server is listening at ${PORT} || 8080.`);
+  });
 
 
 
