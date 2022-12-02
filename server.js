@@ -5,7 +5,7 @@ const user = require("./models/user");
 const bcrypt = require('bcrypt');
 const db = require("./models");
 const jwt = require('jsonwebtoken');
-// const app = express();
+const app = express();
 
 const http = require("http");
 const cors = require("cors");
