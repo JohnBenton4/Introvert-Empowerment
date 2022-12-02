@@ -84,7 +84,7 @@ server.get("*", (req, res) => {
   });
 
 
-app.listen(process.env.PORT || 8080, function(){
+server.listen(process.env.PORT || 8080, function(){
     console.log(`The server is listening at ${PORT} || 8080.`);
   });
 
