@@ -5,7 +5,7 @@ const user = require("./models/user");
 const bcrypt = require('bcrypt');
 const db = require("./models");
 const jwt = require('jsonwebtoken');
-const app = express();
+// const app = express();
 
 const http = require("http");
 const cors = require("cors");
@@ -82,26 +82,6 @@ server.post('/login', async (req, res) => {
 server.get("*", (req, res) => {
     res.sendFile(path.resolve(`${__dirname}/client/build/index.html`));
   });
-
-// app.get('/challenges', async (req, res) => {
-//     const challenges = await Challenge.findAll();
-//     res.json(challenges);
-// });
-
-// app.get('/pickuplines', async (req, res) => {
-//     const pickuplines = await PickupLine.findAll();
-//     res.json(pickuplines);
-// });
-
-// app.get('/conversations', async (req, res) => {
-//     const conversations = await Conversation.findAll();
-//     res.json(conversations);
-// });
-
-// app.get('/users', async (req, res) => {
-//     const users = await User.findAll();
-//     res.json(users);
-// });
 
 
 app.listen(process.env.PORT || 8080, function(){
