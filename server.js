@@ -25,7 +25,7 @@ server.use(express.static(path.resolve(`${__dirname}/client/build`)));
 
 server.get("/challenges", async (req, res) => {
   const challenges = await Challenge.findAll();
-  res.json(challenges);
+  res.json({challenges});
 });
 
 server.get("/pickuplines", async (req, res) => {
