@@ -33,7 +33,7 @@ export default function ServiceOne() {
   return (
     <>
       <div className="containerService1">
-        <h1 id="title">Pick your challenege</h1>
+        <h1 id="title">Pick your challenge</h1>
         <p>
           *Click on a button to retrieve challenges from each category. Write
           down or remember the challenges you received and you will put them
