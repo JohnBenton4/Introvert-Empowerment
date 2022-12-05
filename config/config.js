@@ -7,7 +7,7 @@ const {
 
 module.exports = 
 {
-  development: {
+  "development": {
     username: "postgres",
     password: null,
     database: "database_development",
@@ -21,7 +21,7 @@ module.exports =
   //   host: "127.0.0.1",
   //   dialect: "postgres"
   // },
-  production: {
+  "production": {
     username: PG_USER,
     password: PG_PASSWORD,
     database: PG_DATABASE,
