@@ -1,6 +1,4 @@
-// const hostname = "127.0.0.1";
 const PORT = process.env.PORT ?? 8080;
-// const server = http.createServer(app);
 const user = require("./models/user");
 const bcrypt = require('bcrypt');
 const db = require("./models");
@@ -50,12 +48,9 @@ server.post('/login', async (req, res) => {
             email: email
         }
     })
-    console.log(user)
 
     if (user) {
         const match = await bcrypt.compare(password, user.password)
-        console.log(password)
-        console.log(user.password)
         //generate the json web token
         if (!match) {
             //response with not authenticated
@@ -66,7 +61,6 @@ server.post('/login', async (req, res) => {
             const token = jwt.sign({ email: user.email }, 'SECRETKEY')
             const result = { success: true, token: token, userId: user.id }
             res.json(result)
-            console.log(result.success)
         }
 
     } else {
@@ -85,6 +79,4 @@ server.listen(PORT, function(){
 
 
 
-// server.listen(port, hostname, () => {
-//     console.log(`Server running at http://${hostname}:${port}/`);
-// });
+

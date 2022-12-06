@@ -16,10 +16,10 @@ export default function ContactForm() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          // console.log(result.text);
         },
         (error) => {
-          console.log(error.text);
+          // console.log(error.text);
         }
       );
     e.target.reset();

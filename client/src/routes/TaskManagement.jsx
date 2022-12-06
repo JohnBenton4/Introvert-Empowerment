@@ -15,7 +15,7 @@ export default function TaskManagement() {
     }
     let todo = { id: id, text: text, completed: false };
     let newTodos = [todo, ...todos];
-    console.log(newTodos);
+    // console.log(newTodos);
     setTodos(newTodos);
   };
   const removeTodo = (id) => {
@@ -23,7 +23,7 @@ export default function TaskManagement() {
     setTodos(updatedTodos);
   };
   const completeTodo = (id) => {
-    console.log(id);
+    // console.log(id);
     let updatedTodos = todos.map((todo) => {
       if (todo.id === id) {
         todo.completed = !todo.completed;
