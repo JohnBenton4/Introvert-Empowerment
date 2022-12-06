@@ -10,7 +10,6 @@ export default function Projects() {
     <>
       <div className="services">
         <h1>Our Services</h1>
-        {/* <p>Go through</p> */}
       </div>
       <section className="project-container">
         <div className="flip-card">

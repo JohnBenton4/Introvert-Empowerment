@@ -33,8 +33,6 @@ function LoginAuth({ onSetIsLoggedIn, onSetUserId }) {
         });
       const { success, token, userId } = await response.json();
 
-      console.log(success);
-
       if (success === "true") {
         localStorage.setItem("token", token);
         onSetIsLoggedIn(true);
