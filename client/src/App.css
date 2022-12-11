@@ -7,119 +7,10 @@ body {
 html {
   padding: 0;
   margin: 0;
-}
-/* Navbar section */
-.nav-logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  padding-left: 35px;
-  width: 100%;
-  height: 90px;
-  background: #55917f;
-  color: aliceblue;
-  z-index: 1;
-}
-.nav-logo h1 {
-  color: #fff;
-  font-family: "Outfit", sans-serif;
-  text-transform: uppercase;
+  box-sizing: border-box;
 }
 
-.navbar-routes {
-  display: flex;
-}
 
-.navbar-routes li {
-  padding: 0.5rem;
-  list-style-type: none;
-}
-.navbar-routes a {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: aliceblue;
-}
-.navbar-routes li::after {
-  content: "";
-  width: 0;
-  height: 3px;
-  background-color: #ffffff;
-  margin: auto;
-  display: block;
-}
-.navbar-routes li:hover::after {
-  width: 100%;
-  transition: width 0.3s;
-}
-#loginRoute:hover::after {
-  width: 0%;
-}
-
-h1,
-h1,
-p,
-a {
-  text-decoration: none;
-}
-/* landing page */
-.home-image {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  object-fit: cover;
-}
-.container {
-  height: 80vh;
-  margin: 0;
-  padding: 0;
-  min-width: 100%;
-}
-#MessageDayContainer {
-  position: absolute;
-  top: -2%;
-  right: 50%;
-  transform: translate(50%, 50%);
-  text-align: center;
-  background-color: #f8f8f8;
-  width: 50%;
-  height: 240px;
-  padding: 30px;
-}
-#MessageDayContainer h1 {
-  text-transform: capitalize;
-  font-family: "Outfit", sans-serif;
-}
-#message {
-  color: rgba(114, 115, 112, 0.698);
-  position: relative;
-  padding: 5px;
-  font-size: 25px;
-}
-.sub-container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-/* About us section */
-.about-container {
-  background: #f8f8f8;
-  min-height: 300px;
-  width: 100%;
-  text-align: center;
-  font-family: "Outfit", sans-serif;
-  font-size: 1.5rem;
-}
-.about-container h1 {
-  top: 0;
-  margin: 0;
-  padding: 25px 10px 5px 5px;
-}
-.about-container p {
-  color: rgb(16, 15, 15);
-  padding: 30px 60px;
-}
 
 /* services section */
 .services {
@@ -199,7 +90,6 @@ a {
   text-align: center;
   color: #000000;
   font-size: 3rem;
-  text-transform: capitalize;
   padding: 20px;
 }
 #contact p {
@@ -270,7 +160,6 @@ form textarea {
 #title {
   text-align: center;
   font-family: "Outfit", sans-serif;
-  text-transform: uppercase;
   font-size: 2.3rem;
   padding-top: 20px;
 }
@@ -300,7 +189,6 @@ form textarea {
 }
 
 .task-title {
-  text-transform: uppercase;
   font-size: 1.8rem;
   font-weight: bold;
   font-family: "Outfit", sans-serif;
@@ -334,7 +222,6 @@ form textarea {
   outline: none;
   background-color: #55917f;
   color: white;
-  text-transform: uppercase;
 }
 .todo-row {
   display: flex;
@@ -348,7 +235,6 @@ form textarea {
   padding: 16px;
   border-radius: 5px;
   width: 90%;
-  text-transform: capitalize;
 }
 .iconsContainer {
   display: flex;
@@ -380,7 +266,6 @@ form textarea {
 .footer-container h1 {
   color: #ffffff;
   text-align: center;
-  text-transform: capitalize;
   font-family: "Outfit", sans-serif;
   padding: 20px;
 }
@@ -401,6 +286,179 @@ form textarea {
 .socials {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 300px) {
+  .contact-form {
+    width: 85%;
+  }
+  .containerService1 {
+    max-width: 80%;
+    height: 100%;
+    margin: 120px;
+  }
+  .socialSkills {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #text {
+    width: 100%;
+    padding: 20px;
+  }
+  #MessageDayContainer {
+    width: 80%;
+    height: 39%;
+    top: -10%;
+  }
+
+  .project-container {
+    max-width: 100%;
+  }
+  .flip-card {
+    max-width: 100%;
+    border: 0.5px solid rgba(220, 216, 216, 0.174);
+    border-radius: 25px;
+  }
+  .cardimg {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact-form {
+    width: 85%;
+  }
+  .containerService1 {
+    max-width: 80%;
+    height: 100%;
+    margin: 120px;
+  }
+  .socialSkills {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #text {
+    width: 100%;
+    padding: 20px;
+  }
+  #MessageDayContainer {
+    width: 80%;
+    height: 39%;
+    top: -10%;
+  }
+
+  .project-container {
+    max-width: 100%;
+  }
+  .flip-card {
+    max-width: 100%;
+    border: 0.5px solid rgba(220, 216, 216, 0.174);
+    border-radius: 25px;
+  }
+  .cardimg {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact-form {
+    width: 85%;
+  }
+  .containerService1 {
+    max-width: 80%;
+    height: 100%;
+    margin: 120px;
+  }
+  .socialSkills {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #text {
+    width: 100%;
+    padding: 20px;
+  }
+  #MessageDayContainer {
+    width: 80%;
+    height: 39%;
+    top: -10%;
+  }
+
+  .project-container {
+    max-width: 100%;
+  }
+  .flip-card {
+    max-width: 100%;
+    border: 0.5px solid rgba(220, 216, 216, 0.174);
+    border-radius: 25px;
+  }
+  .cardimg {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-form {
+    width: 85%;
+  }
+  .containerService1 {
+    max-width: 80%;
+    height: 100%;
+    margin: 120px;
+  }
+  .socialSkills {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #text {
+    width: 100%;
+    padding: 20px;
+  }
+  #MessageDayContainer {
+    width: 80%;
+    height: 39%;
+    top: -10%;
+  }
+
+  .project-container {
+    max-width: 100%;
+  }
+  .flip-card {
+    max-width: 100%;
+    border: 0.5px solid rgba(220, 216, 216, 0.174);
+    border-radius: 25px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cardimg {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 1400px) {

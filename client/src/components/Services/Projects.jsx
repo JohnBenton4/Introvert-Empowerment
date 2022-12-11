@@ -2,8 +2,6 @@ import Task from "../../images/taskmanage.jpg";
 import Social from "../../images/social.jpg";
 import Text from "../../images/textReminder.jpg";
 
-// `we used w3 schools code examples as a reference here, credit goes to https://www.w3schools.com/howto/howto_css_flip_card.asp`
-
 import { Link } from "react-router-dom";
 export default function Projects() {
   return (

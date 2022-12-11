@@ -1,0 +1,39 @@
+
+.home-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+  }
+  .container {
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+  }
+  #MessageDayContainer {
+    position: absolute;
+    top: -2%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    text-align: center;
+    background-color: #f8f8f8;
+    width: 75%;
+    height: 240px;
+    padding: 30px;
+  }
+  #MessageDayContainer h1 {
+    font-family: "Outfit", sans-serif;
+  }
+  #message {
+    color: rgba(114, 115, 112, 0.698);
+    position: relative;
+    padding: 5px;
+    font-size: 25px;
+  }
+  .sub-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
