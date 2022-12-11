@@ -7,9 +7,11 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      {/* <div classname = > */}
       <Message />
       <AboutUs />
       <Projects />
+      {/* </div> */}
       <Footer />
     </>
   );

@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-//this portion is not our original code, we give full credit to https://www.youtube.com/channel/UC8efAa0PWX5zGrrYhg2oR1A/featured"
-
 function TaskForm(props) {
   const [input, setInput] = useState("");
 

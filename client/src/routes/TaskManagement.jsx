@@ -36,7 +36,7 @@ export default function TaskManagement() {
     <>
       <Navbar />
       <div className="todo-app">
-        <h1 className="task-title">Task Manager</h1>
+        <h1 className="task-title">TASK MANAGER</h1>
         <TaskForm addTodo={addTodo} />
         {todos.map((todo) => {
           return (

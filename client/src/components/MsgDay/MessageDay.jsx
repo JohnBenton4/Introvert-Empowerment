@@ -2,8 +2,7 @@ import React from "react";
 import HomeImage from "../../images/home.jpg";
 import { useState } from "react";
 import { useEffect } from "react";
-
-//we used this api https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373 for the quotes we do not own it and give credit to them.
+import "./MessageDay.css"
 
 const MessageDay = () => {
   const [quotes, setQuotes] = useState([]);
@@ -37,7 +36,7 @@ const MessageDay = () => {
       <div className="sub-container">
         <img className="home-image" src={HomeImage} alt="Homeimage" />
         <div id="MessageDayContainer">
-          <h1>Message of the day....</h1>
+          <h1>Message of the Day....</h1>
           <div id="message">{renderMessageDay()}</div>
         </div>
       </div>

@@ -7,7 +7,6 @@ import { Challenges, Contact, Home, Login, Register, Services, TaskManagement, T
 function App() {
   return (
     <div className="App">
-      <>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/services' element={<Services />} />
@@ -18,7 +17,6 @@ function App() {
           <Route path='/taskmanagement' element={<TaskManagement />} />
           <Route path='/textreminder' element={<TextReminder />} />
         </Routes>
-        </>
     </div>
   );
 }
