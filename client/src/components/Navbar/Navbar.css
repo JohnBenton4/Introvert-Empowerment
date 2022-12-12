@@ -1,4 +1,10 @@
 /* Navbar section */
+
+
+.navbar>.container {
+  height: 130px;
+}
+
 .nav-logo {
     display: flex;
     justify-content: space-between;
@@ -6,12 +12,33 @@
     padding: 10px;
     padding-left: 35px;
     width: 100%;
-    height: 90px;
+    height: 150px;
     background: #55917f;
     color: aliceblue;
     z-index: 1;
   }
+
+  .me-auto {
+    padding-left: 45px;
+  }
+
+  a {
+    color: aliceblue;
+padding-left: 20px;  
+}
   
+.basic-navbar-nav {
+  display: flex;
+
+}
+
+.navbar-collapse {
+}
+  .nav-link {
+    color: aliceblue;
+
+  }
+
   .nav-logo h1 {
     color: #fff;
     font-family: "Outfit", sans-serif;

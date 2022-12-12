@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./ServiceOne.css";
 
 export default function ServiceOne() {
   const randomConversation = Math.floor(Math.random() * 23);

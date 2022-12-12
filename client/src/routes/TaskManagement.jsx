@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar/Navbar";
+import Navbar1 from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import TaskForm from "../components/Projects/TaskManagement/TaskForm";
 import { useState } from "react";
@@ -34,7 +34,7 @@ export default function TaskManagement() {
   };
   return (
     <>
-      <Navbar />
+      <Navbar1 />
       <div className="todo-app">
         <h1 className="task-title">TASK MANAGER</h1>
         <TaskForm addTodo={addTodo} />

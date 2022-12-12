@@ -1,9 +1,9 @@
-import Navbar from "../components/Navbar/Navbar";
+import Navbar1 from "../components/Navbar/Navbar";
 import LoginAuth from "../components/Login/LoginAuth";
 export default function Login() {
   return (
     <>
-      <Navbar />
+      <Navbar1 />
       <LoginAuth />
     </>
   );

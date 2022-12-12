@@ -1,0 +1,26 @@
+.todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: rgb(255, 255, 255);
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    background-color: #55917f;
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+  }
+  .iconsContainer {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .icon {
+    margin-left: 1rem;
+    width: 16px;
+  }
+  .complete {
+    text-decoration: line-through;
+  }
