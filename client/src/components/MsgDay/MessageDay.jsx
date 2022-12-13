@@ -32,7 +32,7 @@ const MessageDay = () => {
   };
 
   return (
-    <div className="container">
+    <div className="Mcontainer">
       <div className="sub-container">
         <img className="home-image" src={HomeImage} alt="Homeimage" />
         <div id="MessageDayContainer">

@@ -1,7 +1,6 @@
 import Task from "../../images/taskmanage.jpg";
 import Social from "../../images/social.jpg";
 import Text from "../../images/textReminder.jpg";
-
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./Projects.css";
