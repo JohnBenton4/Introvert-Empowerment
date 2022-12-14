@@ -4,8 +4,6 @@ import TaskForm from "../components/Projects/TaskManagement/TaskForm";
 import { useState } from "react";
 import TaskItem from "../components/Projects/TaskManagement/TaskItem";
 
-//this portion is not our original code, we give full credit to https://www.youtube.com/channel/UC8efAa0PWX5zGrrYhg2oR1A/featured"
-
 export default function TaskManagement() {
   const [todos, setTodos] = useState([]);
   const addTodo = (text) => {
@@ -15,7 +13,6 @@ export default function TaskManagement() {
     }
     let todo = { id: id, text: text, completed: false };
     let newTodos = [todo, ...todos];
-    // console.log(newTodos);
     setTodos(newTodos);
   };
   const removeTodo = (id) => {
@@ -23,7 +20,6 @@ export default function TaskManagement() {
     setTodos(updatedTodos);
   };
   const completeTodo = (id) => {
-    // console.log(id);
     let updatedTodos = todos.map((todo) => {
       if (todo.id === id) {
         todo.completed = !todo.completed;
@@ -49,7 +45,6 @@ export default function TaskManagement() {
           );
         })}
       </div>
-
       <Footer />
     </>
   );

@@ -7,7 +7,7 @@
     
   }
   .footer-container {
-    max-width: 1140px;
+    width: 100%;
     margin: auto;
   }
   .footer-container h1 {
@@ -33,12 +33,16 @@
     font-size: 2rem;
     color: #55917f;
   }
+  .row {
+    /* width: 100%; */
+  }
 
   .left {
     text-align: center;
     font-size: 2rem;
     color: #55917f;
     padding: 5px;
+    width: 100%;
     }
 
   .right {
@@ -46,6 +50,8 @@
     font-size: 2rem;
     color: #55917f;
     padding: 5px;
+    width: 100%;
+
   }
 
   .socials {
