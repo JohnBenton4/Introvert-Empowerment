@@ -1,5 +1,6 @@
 import React from "react";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import "./TaskItem.css";
 
 function TaskItem(props) {
   const { todo, removeTodo, completeTodo } = props;

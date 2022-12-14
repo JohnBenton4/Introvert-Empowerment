@@ -10,13 +10,11 @@ export default function AboutUs() {
         <a href="https://high5test.com/introvert-vs-extrovert-differences/#:~:text=3.,did%20not%20indicate%20a%20response.">
           article,
         </a>
-        "Statistically, a slightly larger portion of the US population is
-        introverted. The original randomized Myers-Briggs type indicator sample
-        showed that 50.7% of Americans are introverts." Being an introvert isn't
-        a bad thing. However, there are some challenges such as difficulty
-        expanding one's social network and meeting new people face to face that
-        can hold an introvert back. Our app, Introvert Empowerment, is able to
-        help you overcome social disadvantages and can boost confidence.
+        "Statistically, a slightly larger portion of the US population, 50.7%,
+        is introverted." Being an introvert isn't a bad thing, however, there
+        are some societal barriers that can hold an introvert back. Our app,
+        Introvert Empowerment, is able to help you overcome social disadvantages
+        and allow you to discover the best version of you.
       </p>
     </div>
   );

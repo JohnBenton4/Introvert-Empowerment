@@ -1,4 +1,7 @@
 import { useState } from "react";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import "./ServiceOne.css";
 
 export default function ServiceOne() {
   const randomConversation = Math.floor(Math.random() * 23);
@@ -39,17 +42,31 @@ export default function ServiceOne() {
           down or remember the challenges you received and you will put them
           into the next service*
         </p>
+
         <div className="socialSkills">
-          <button onClick={submit} type="button" className="btn btn-dark">
-            Random Challenge
-          </button>
-          <button onClick={click} type="button" className="btn btn-dark">
-            Conversation Starter
-          </button>
-          <button onClick={clickHandler} type="button" className="btn btn-dark">
-            Pick up line
-          </button>
+          <Row>
+            <Col sm={true}>
+              <button onClick={submit} type="button" className="btn btn-dark">
+                Random Challenge
+              </button>
+            </Col>
+            <Col sm={true}>
+              <button onClick={click} type="button" className="btn btn-dark">
+                Conversation Starter
+              </button>
+            </Col>
+            <Col sm={true}>
+              <button
+                onClick={clickHandler}
+                type="button"
+                className="btn btn-dark"
+              >
+                Pick up line
+              </button>
+            </Col>
+          </Row>
         </div>
+
         <div id="text">
           <p>{text}</p>
         </div>

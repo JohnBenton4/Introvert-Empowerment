@@ -1,54 +1,33 @@
 /* Navbar section */
+
 .nav-logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    padding-left: 35px;
-    width: 100%;
-    height: 90px;
-    background: #55917f;
-    color: aliceblue;
-    z-index: 1;
-  }
-  
-  .nav-logo h1 {
-    color: #fff;
-    font-family: "Outfit", sans-serif;
-  }
-  
-  .navbar-routes {
-    display: flex;
-  }
-  
-  .navbar-routes li {
-    padding: 0.5rem;
-    list-style-type: none;
-  }
-  .navbar-routes a {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: aliceblue;
-  }
-  .navbar-routes li::after {
-    content: "";
-    width: 0;
-    height: 3px;
-    background-color: #ffffff;
-    margin: auto;
-    display: block;
-  }
-  .navbar-routes li:hover::after {
-    width: 100%;
-    transition: width 0.3s;
-  }
-  #loginRoute:hover::after {
-    width: 0%;
-  }
-  
-  h1,
-  h1,
-  p,
-  a {
-    text-decoration: none;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-left: 35px;
+  width: 100%;
+  height: auto;
+  background: #55917f;
+  color: aliceblue;
+  /* z-index: 1; */
+}
+
+.basic-navbar-nav {
+  display: flex;
+}
+
+.nav-link {
+  color: aliceblue;
+}
+
+.nav-logo h1 {
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+}
+
+#loginRoute:hover::after {
+  width: 0%;
+}
+
+

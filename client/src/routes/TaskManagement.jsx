@@ -1,10 +1,8 @@
-import Navbar from "../components/Navbar/Navbar";
+import Navbar1 from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import TaskForm from "../components/Projects/TaskManagement/TaskForm";
 import { useState } from "react";
 import TaskItem from "../components/Projects/TaskManagement/TaskItem";
-
-//this portion is not our original code, we give full credit to https://www.youtube.com/channel/UC8efAa0PWX5zGrrYhg2oR1A/featured"
 
 export default function TaskManagement() {
   const [todos, setTodos] = useState([]);
@@ -15,7 +13,6 @@ export default function TaskManagement() {
     }
     let todo = { id: id, text: text, completed: false };
     let newTodos = [todo, ...todos];
-    // console.log(newTodos);
     setTodos(newTodos);
   };
   const removeTodo = (id) => {
@@ -23,7 +20,6 @@ export default function TaskManagement() {
     setTodos(updatedTodos);
   };
   const completeTodo = (id) => {
-    // console.log(id);
     let updatedTodos = todos.map((todo) => {
       if (todo.id === id) {
         todo.completed = !todo.completed;
@@ -34,7 +30,7 @@ export default function TaskManagement() {
   };
   return (
     <>
-      <Navbar />
+      <Navbar1 />
       <div className="todo-app">
         <h1 className="task-title">TASK MANAGER</h1>
         <TaskForm addTodo={addTodo} />
@@ -49,7 +45,6 @@ export default function TaskManagement() {
           );
         })}
       </div>
-
       <Footer />
     </>
   );

@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar/Navbar";
+import Navbar1 from "../components/Navbar/Navbar";
 import ServiceOne from "../components/Projects/ServiceOne";
 import Footer from "../components/Footer/Footer";
 
@@ -9,7 +9,7 @@ export default function Challenges() {
 
   return (
     <>
-      <Navbar />
+      <Navbar1 />
       <ServiceOne selected={selected} setSelected={setSelected} />
       <Footer />
     </>
