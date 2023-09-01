@@ -27,7 +27,7 @@ const MessageDay = () => {
     return (
       <div>
         "{quote.text}"<br></br>
-        {/* -{quote.author} */}
+        -{quote.author.slice(0, -10)}
       </div>
     );
   };
