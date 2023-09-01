@@ -26,8 +26,8 @@ const MessageDay = () => {
     const quote = quotes[Math.floor(Math.random() * quotes.length)];
     return (
       <div>
-        "{quote.text}"<br></br>-
-        {quote.author.slice(0,10)}
+        "{quote.text}"<br></br>
+        {/* -{quote.author} */}
       </div>
     );
   };

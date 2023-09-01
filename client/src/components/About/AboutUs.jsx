@@ -12,7 +12,7 @@ export default function AboutUs() {
         </a>
         "Statistically, a slightly larger portion of the US population, 50.7%,
         is introverted." Being an introvert isn't a bad thing, however, there
-        are some societal barriers that can hold an introvert back. Our app,
+        are some social barriers that can hold an introvert back. Our app,
         Introvert Empowerment, is able to help you overcome social disadvantages
         and allow you to discover the best version of you.
       </p>
