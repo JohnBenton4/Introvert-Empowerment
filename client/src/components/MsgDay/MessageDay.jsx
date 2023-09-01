@@ -21,12 +21,13 @@ const MessageDay = () => {
 
   const renderMessageDay = () => {
     if (!quotes.length) {
-      return "";
+      return "Anonymous";
     }
     const quote = quotes[Math.floor(Math.random() * quotes.length)];
     return (
       <div>
-        "{quote.text}"<br></br>-{quote.author}
+        "{quote.text}"<br></br>-
+        {quote.author.slice(0,10)}
       </div>
     );
   };
